@@ -1,6 +1,21 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: false,
+  experimental: {
+    images: {
+      allowFutureImage: true
+    }
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'silburydemo.staging.sites.dropsolid-sites.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
   rewrites: () => {
     return [
       {

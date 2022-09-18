@@ -11684,6 +11684,7 @@
           },
           "required": [
             "drupal_internal__id",
+            "field_headline_hero",
             "field_sub_headline_hero"
           ]
         },
