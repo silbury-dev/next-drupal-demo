@@ -23,18 +23,18 @@ export const ProductListComponent = (props: ProductListData) => {
 
   let data = props;
   data = fetchProductDataCSR(props.relatedSolutionId).pageData
-  const css = { width: '100%', height: 'auto' };
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900"></h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Technologies</h2>
 
         <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data?.products && data.products.map(product => <div key={product.id} className="group relative">
             <div className="px-0 flex min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
               {
                 <img src={product.imagesrc} alt={product.imagesrc} className="h-full w-full object-contain object-center lg:h-full lg:w-full" />
-                //<Image sizes="50vw" width={100} height={200} style={css} src={product.imagesrc} alt={product.headline} className="my-auto "></Image>
+                //<Image sizes="40vw"  width={100} height={200} src={product.imagesrc} alt={product.headline} className="my-auto h-auto w-full"></Image>
               }
             </div>
             <div className="mt-4 flex justify-between">

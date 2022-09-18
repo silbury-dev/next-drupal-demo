@@ -16,7 +16,7 @@ const Home: NextPage = (props:PageData) => {
   let pageData = props.pageData;
   let heroData = props.heroData;
 
-  //pageData = fetchPageDataCSR(pageApi)
+  pageData = fetchPageDataCSR(pageApi)
   
   
   return (

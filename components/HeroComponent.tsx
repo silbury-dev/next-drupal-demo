@@ -1,6 +1,6 @@
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import { Fragment, useEffect, useState } from 'react';
 import { FileFileDataAttributes, ParagraphHeroDataAttributes } from '../drupal-api-client';
 import { APIs } from './apis';
@@ -94,6 +94,7 @@ export const HeroComponent = (props: HeroData) => {
 
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
+              {/* <h2 className="text-lg font-semibold text-blue-600">PLACEHOLDER</h2> */}
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">{heroData.fieldHeadlineHero}</span>{' '}
               </h1>
@@ -119,7 +120,7 @@ export const HeroComponent = (props: HeroData) => {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         {fileData &&
           <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src={fileData.uri.url} alt="" /> 
-          //<Image priority={true} className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src={fileData.uri.url} layout={'fill'} objectFit={'cover'} alt={fileData.filename} />
+          //<Image priority sizes="50vw" width={100} height={400} src={fileData.uri.url} alt={fileData.filename} className="my-auto h-auto w-full h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"></Image>
         }
       </div>
     </div>
