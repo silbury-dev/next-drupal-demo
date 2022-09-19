@@ -57,50 +57,52 @@ const products = [
     linktext: "Drupal",
     subheadline: "With robust content management tools, sophisticated APIs for multichannel publishing, and a track record of continuous innovation—Drupal is the best digital ..."
   },
-  // {
-  //   id: 7,
-  //   name: 'Dropsolid',
-  //   href: 'https://dropsolid.com/en',
-  //   imagesrc: "http://silburydemo.staging.sites.dropsolid-sites.com/sites/default/files/styles/large/public/2022-09/Dropsolid.png?itok=n4jxHJsM",
-  //   imageAlt: "Dropsolid Logo",
-  //   linktext: "Dropsolid",
-  //   subheadline: "Dropsolid makes complex marketing technology accessible for ambitious brands, organizations and governments to create the best digital version of their ..."
-  // },
+  {
+    id: 7,
+    name: 'Dropsolid',
+    href: 'https://dropsolid.com/en',
+    imagesrc: "http://silburydemo.staging.sites.dropsolid-sites.com/sites/default/files/styles/large/public/2022-09/Dropsolid.png?itok=n4jxHJsM",
+    imageAlt: "Dropsolid Logo",
+    linktext: "Dropsolid",
+    subheadline: "Dropsolid makes complex marketing technology accessible for ambitious brands, organizations and governments to create the best digital version of their ..."
+  },
   // More products...
   // copy from Drupal
 ]
 
 // TODO ProductListComponent
 
-// JSX
-    // <div className="bg-white">
-    //   <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-    //     <h2 className="text-2xl font-bold tracking-tight text-gray-900">Technologien</h2>
+export default function ProductListComponent() {
+	return (
+    <div className="bg-white">
+      <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Technologien</h2>
 
-    //     <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-    //       { // TODO Ausgabe aller Produkte
-    //         // -------------- Start einzelnes Produkt ----------------
-    //       <div key={"TODO"} className="group relative">
-    //         <div className="px-0 flex min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80">
-                    // {
-                    //   // TODO: next/image
-                    // }
-    //             <img src={"TODO"} alt={"Lorem Ipsum"} className="h-full w-full object-contain object-center lg:h-full lg:w-full" />
-    //         </div>
-    //         <div className="mt-4 flex justify-between">
-    //           <div>
-    //             <h3 className="text-sm text-gray-700">
-    //               <a href={"TODO"} target={'_blank'}>
-    //                 <span aria-hidden="true" className="absolute inset-0  lg:h-80" />
-    //                 TODO: Linktext des Produkts
-    //               </a>
-    //             </h3>
-    //             <p className="mt-1 text-sm text-gray-500">TODO: SubHeadline"</p>
-    //           </div>
-    //         </div>
-    //       </div>
-    //        // -------------- Ende einzelnes Produkt ----------------
-    //       }
-    //     </div>
-    //   </div>
-    // </div>
+        <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          { // TODO Ausgabe aller Produkte
+            // -------------- Start einzelnes Produkt ----------------
+          <div key={"TODO"} className="group relative">
+            <div className="px-0 flex min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80">
+                    {
+                      // TODO: next/image
+                    }
+                <img src={"TODO"} alt={"Lorem Ipsum"} className="h-full w-full object-contain object-center lg:h-full lg:w-full" />
+            </div>
+            <div className="mt-4 flex justify-between">
+              <div>
+                <h3 className="text-sm text-gray-700">
+                  <a href={"TODO"} target={'_blank'}>
+                    <span aria-hidden="true" className="absolute inset-0  lg:h-80" />
+                    TODO: Linktext des Produkts
+                  </a>
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">TODO: SubHeadline"</p>
+              </div>
+            </div>
+          </div>
+           // -------------- Ende einzelnes Produkt ----------------
+          }
+        </div>
+      </div>
+    </div>
+		) }

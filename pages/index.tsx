@@ -1,25 +1,25 @@
 import type { NextPage } from 'next'
+import HeroComponent from "../components/HeroComponent";
+import FeatureList from "../components/FeatureList";
+import RichText from "../components/RichText";
+import ProductListComponent from "../components/ProductListComponent";
+import Head from 'next/head';
 
 
 const Home: NextPage = () => {
   
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <>
-      {
-        // TODO Next/Head
-      }
+        <Head>
         <title>Silbury - Implementing sustainable futures</title>
         <meta name='description' content="Silbury - Implementing sustainable futures"/>
         <link rel="icon" href="/favicon.ico" />
-      </>
+	</Head>
       <main>
-        {
-            // 1. HeroComponent
-            // 2. FeatureList
-            // 3. RichText
-            // 4. ProductListComponent
-        }
+            <HeroComponent />
+            <FeatureList />
+            {/* <RichText/>*/ }
+            <ProductListComponent/>
       </main>
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a
