@@ -30,10 +30,8 @@ export default function HeroComponent() {
 			<div className="flex w-full items-center justify-between md:w-auto">
 			<a href="#">
 			<span className="sr-only">Your Company</span>
-			{
-			// TODO: next/image
-			}  
-			<img alt="Your Company" className="h-3 w-auto sm:h-6" src="./logo.svg" />
+			<Image alt="Your Company" className="h-3 w-auto sm:h-6"
+			src="/logo.svg" width={500} height={300} />
 			</a>
 			<div className="-mr-2 flex items-center md:hidden">
 			<Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
