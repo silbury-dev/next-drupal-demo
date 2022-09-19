@@ -79,28 +79,27 @@ export default function ProductListComponent() {
         <h2 className="text-2xl font-bold tracking-tight text-gray-900">Technologien</h2>
 
         <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          { // TODO Ausgabe aller Produkte
-            // -------------- Start einzelnes Produkt ----------------
-          <div key={"TODO"} className="group relative">
+          { products.map(product => 
+          <div key={product.id} className="group relative">
             <div className="px-0 flex min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80">
                     {
                       // TODO: next/image
                     }
-                <img src={"TODO"} alt={"Lorem Ipsum"} className="h-full w-full object-contain object-center lg:h-full lg:w-full" />
+                <img src={product.imagesrc} alt={product.imageAlt} className="h-full w-full object-contain object-center lg:h-full lg:w-full" />
             </div>
             <div className="mt-4 flex justify-between">
               <div>
                 <h3 className="text-sm text-gray-700">
-                  <a href={"TODO"} target={'_blank'}>
+                  <a href={product.href} target={'_blank'}>
                     <span aria-hidden="true" className="absolute inset-0  lg:h-80" />
-                    TODO: Linktext des Produkts
+                    {product.linktext}
                   </a>
                 </h3>
-                <p className="mt-1 text-sm text-gray-500">TODO: SubHeadline"</p>
+                <p className="mt-1 text-sm text-gray-500">{product.subheadline}</p>
               </div>
             </div>
           </div>
-           // -------------- Ende einzelnes Produkt ----------------
+		  )
           }
         </div>
       </div>
