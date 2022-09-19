@@ -8367,7 +8367,7 @@
           "additionalProperties": false,
           "type": "object",
           "properties": {"field_solutions": {
-            "maxItems": 3,
+            "maxItems": 8,
             "type": "object",
             "title": "Solutions",
             "properties": {"data": {
@@ -11643,6 +11643,20 @@
               "type": "string",
               "title": "Language"
             },
+            "field_bg_color_paragraph": {
+              "type": "object",
+              "title": "Subheadline Textcolor",
+              "properties": {
+                "color": {
+                  "type": "string",
+                  "title": "Color"
+                },
+                "opacity": {
+                  "type": "float",
+                  "title": "Opacity"
+                }
+              }
+            },
             "field_sub_headline_hero": {
               "type": "string",
               "title": "Subheadline",
@@ -11684,6 +11698,7 @@
           },
           "required": [
             "drupal_internal__id",
+            "field_headline_hero",
             "field_sub_headline_hero"
           ]
         },
