@@ -105,7 +105,7 @@ export default function HeroComponent() {
 		{
 			// TODO: next/image
 		}
-	<img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src={""} alt="" /> 
+	<Image width={640} height={594} className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src={heroImageUrl} alt="" />
 		</div>
 		</div>
 		)}
