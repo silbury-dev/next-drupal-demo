@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-// import { FeatureList } from '../components/FeatureList'
+import { FeatureList } from '../components/FeatureList'
 import {  HeroComponent } from '../components/HeroComponent'
 // import { ProductListComponent } from '../components/ProductListComponent'
 // import { RichText } from '../components/RichText'
@@ -18,10 +18,10 @@ const Home: NextPage = () => {
       </Head>
       <main>
         {
-          // TODO Komponenten referenzieren
-            // 1. HeroComponent
+            <>
             <HeroComponent></HeroComponent>
-            // 2. FeatureList
+            <FeatureList></FeatureList>
+            </>
             // 3. RichText
             // 4. ProductListComponent
         }
