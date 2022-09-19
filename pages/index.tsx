@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-// import { FeatureList } from '../components/FeatureList'
+import { FeatureList } from '../components/FeatureList'
 import {  HeroComponent } from '../components/HeroComponent'
 // import { ProductListComponent } from '../components/ProductListComponent'
  import { RichText } from '../components/RichText'
@@ -28,6 +28,8 @@ const Home: NextPage = () => {
         
         <HeroComponent></HeroComponent>
         <RichText></RichText>
+        <FeatureList></FeatureList>
+        
 
       </main>
       <footer className="flex h-24 w-full items-center justify-center border-t">
@@ -38,7 +40,8 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img alt="Silbury Logo" className="h-3 w-auto sm:h-6" src="./logo.png" />
+         
+          <Image alt="Silbury Logo" className="h-3 w-auto sm:h-6" src="./logo.png" />
         </a>
       </footer>
     </div>
