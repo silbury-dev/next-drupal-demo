@@ -1,10 +1,14 @@
+import { render } from '@headlessui/react/dist/utils/render'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-// import { FeatureList } from '../components/FeatureList'
-// import {  HeroComponent } from '../components/HeroComponent'
-// import { ProductListComponent } from '../components/ProductListComponent'
-// import { RichText } from '../components/RichText'
+import { FeatureList } from '../components/FeatureList'
+import {  HeroComponent } from '../components/HeroComponent'
+import { ProductListComponent } from '../components/ProductListComponent'
+import { RichText } from '../components/RichText'
+
+
+
 
 
 const Home: NextPage = () => {
@@ -23,7 +27,14 @@ const Home: NextPage = () => {
             // 2. FeatureList
             // 3. RichText
             // 4. ProductListComponent
+            
+            
         }
+        <HeroComponent></HeroComponent>
+        <FeatureList></FeatureList>
+        <RichText></RichText>
+        <ProductListComponent></ProductListComponent>
+        
       </main>
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a
