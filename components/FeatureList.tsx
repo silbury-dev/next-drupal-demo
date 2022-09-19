@@ -30,7 +30,6 @@ export const features = [
 
 export function FeatureList(){
   return(
-    
     <div className="bg-white py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
@@ -42,23 +41,24 @@ export function FeatureList(){
             </p>
           </div>
           <div className="mt-10 ">
+          
             <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0 ">
-              {
-                
-              <div key={"TODO: Name des Features"} className="relative">
+            {
+          features.map(feature => 
+          <div key={feature.name} className="relative">              
                 <dt>
                   <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
-                    {
-                      // Icons
-                    }
-                    <BoltIcon className="h-6 w-6" aria-hidden="true" />
+                  { <><feature.icon className='h-6 w-6' aria-hidden='true'/></>}
                   </div>
-                  <p className="ml-16 text-lg font-medium leading-6 text-gray-900">TODO: Name des Features</p>
+                  <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{feature.name}</p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500">TODO: Beschreibung des Features</dd>
+                <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
               </div>
-              }
+              
+              )
+          }
             </dl>
+          
           </div>
         </div>
       </div>
