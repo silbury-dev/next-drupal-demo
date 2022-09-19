@@ -85,7 +85,7 @@ export default function ProductListComponent() {
                     {
                       // TODO: next/image
                     }
-                <img src={product.imagesrc} alt={product.imageAlt} className="h-full w-full object-contain object-center lg:h-full lg:w-full" />
+                <Image width={280} height={280} src={product.imagesrc} alt={product.imageAlt} className="h-full w-full object-contain object-center lg:h-full lg:w-full" />
             </div>
             <div className="mt-4 flex justify-between">
               <div>
