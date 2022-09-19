@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 // import { FeatureList } from '../components/FeatureList'
-// import {  HeroComponent } from '../components/HeroComponent'
+import {  HeroComponent } from '../components/HeroComponent'
 // import { ProductListComponent } from '../components/ProductListComponent'
  import { RichText } from '../components/RichText'
 
@@ -25,8 +25,10 @@ const Home: NextPage = () => {
             // 4. ProductListComponent
         }
 
-        <RichText></RichText>
         
+        <HeroComponent></HeroComponent>
+        <RichText></RichText>
+
       </main>
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a
