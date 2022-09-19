@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { FeatureList } from '../components/FeatureList'
 import {  HeroComponent } from '../components/HeroComponent'
 // import { ProductListComponent } from '../components/ProductListComponent'
-// import { RichText } from '../components/RichText'
+import { RichText } from '../components/RichText'
 
 
 const Home: NextPage = () => {
@@ -21,8 +21,8 @@ const Home: NextPage = () => {
             <>
             <HeroComponent></HeroComponent>
             <FeatureList></FeatureList>
+            <RichText></RichText>
             </>
-            // 3. RichText
             // 4. ProductListComponent
         }
       </main>
