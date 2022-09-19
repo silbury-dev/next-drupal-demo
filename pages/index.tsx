@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { FeatureList } from '../components/FeatureList'
 import {  HeroComponent } from '../components/HeroComponent'
-// import { ProductListComponent } from '../components/ProductListComponent'
+import { ProductListComponent } from '../components/ProductListComponent'
 import { RichText } from '../components/RichText'
 
 
@@ -22,8 +22,8 @@ const Home: NextPage = () => {
             <HeroComponent></HeroComponent>
             <FeatureList></FeatureList>
             <RichText></RichText>
+            <ProductListComponent></ProductListComponent>
             </>
-            // 4. ProductListComponent
         }
       </main>
       <footer className="flex h-24 w-full items-center justify-center border-t">
